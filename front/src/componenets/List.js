@@ -5,7 +5,7 @@ import Edit from "./Edit";
 const List = () => {
   const [todos, setTodos] = useState([]);
 
-  //delete todo function
+
 
   const deleteTodo = async id => {
     try {
@@ -48,11 +48,7 @@ const List = () => {
           </tr>
         </thead>
         <tbody>
-          {/*<tr>
-            <td>John</td>
-            <td>Doe</td>
-            <td>john@example.com</td>
-          </tr> */}
+          
           {todos.map(todo => (
             <tr key={todo.todo_id}>
               <td>{todo.description}</td>

@@ -3,8 +3,7 @@ import React, { Fragment, useState } from "react";
 const Edit= ({ todo }) => {
   const [description, setDescription] = useState(todo.description);
 
-  //edit description function
-
+ 
   const updateDescription = async e => {
     e.preventDefault();
     try {

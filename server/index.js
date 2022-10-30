@@ -6,7 +6,7 @@ const pool =require("./db");
 app.use(cors());
 app.use(express.json())
 
-//route
+
 
 
 //create a todo
@@ -26,7 +26,7 @@ app.post("/todos", async (req, res) => {
    }
  });
 
- //get all todos
+ //all todos
 
 app.get("/todos", async (req, res) => {
    try {
@@ -38,7 +38,7 @@ app.get("/todos", async (req, res) => {
  });
 
  
-//get a todo
+
 
 app.get("/todos/:id", async (req, res) => {
    try {
